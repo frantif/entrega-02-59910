@@ -1,0 +1,327 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilos generales */
+body{
+    background-color: rgb(238, 238, 238);
+}
+
+
+/* estilos de header */
+
+/* estilos de header */
+
+
+header .menu-cabeza{
+    position: sticky;
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    color: rgb(105, 104, 103);
+}
+
+header .boton-logo{
+    padding: 0.3rem;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0.4rem;
+}
+
+header nav ul li a{
+    color:#DF9527;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+
+
+/* estilos de mobile */
+
+/* estilos menu 1 */
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    font-family: "Poppins", sans-serif;
+}
+
+main .menu-principal{
+    display: flex;
+    text-decoration: none;
+    row-gap: 1rem;
+}
+
+main .menu-uno{
+    text-align: center;
+}
+
+main .menu-uno img{
+    width: 100%;
+}
+
+main .menu-uno h1{
+    padding-top: 0.5rem;
+}
+
+main .menu-uno h1 span{
+    display: block;
+}
+
+main .menu-uno p{
+    padding: 1rem;
+}
+
+main .menu-uno .boton-index{
+    display: inline-block;
+    background-color: #DF9527;
+    padding: 0.8rem;
+    text-align: center;
+    width: 50%;
+    margin: 1rem;
+    border-radius: 15px;
+}
+
+main .boton-index a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+main .boton-index a:hover{
+    background-color: rgb(198, 117, 12);
+    border-radius: 10px;
+}
+
+
+/* estilos menu 2 */
+
+main .menu-dos{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1rem;
+}
+
+main .menu-dos img{
+    width: 70%;
+    margin: 2rem;
+}
+
+main .menu-dos p{
+    padding: 0.5rem;
+}
+
+main .menu-dos a{
+    text-decoration: none;
+    background-color: rgb(157, 156, 156);
+    color: antiquewhite;
+    border-radius: 15px;
+    padding: 0.5rem;
+    margin: 0 auto;
+}
+
+/* estilos desktop */
+
+@media screen and (min-width:1024px){
+    
+
+    main{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 40%);
+        column-gap: 1.5rem;
+    }
+
+    main .wash1{ 
+        grid-column: span 2;
+    }
+
+    
+    main .menu-uno .boton-index{
+        width: 40%;
+    }
+
+}
+    
+
+
+/* estilos Mobile del main agenda */
+main .item-agenda{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 40%);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+   
+}
+
+main .item-agenda h1{
+    display: inline-block;
+}
+
+
+.item-agenda img{
+    height: 50%;
+    width: 50%;
+    display: inline-block;
+    margin: 1rem;
+
+}
+
+
+.botonagenda{
+    background-color: orange;
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.botonagenda a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+
+/* estilos desktop del main agenda */
+
+@media screen and (min-width:1024px){
+
+    main .item-agenda{
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-rows: repeat(2, 70%);
+        
+    }
+
+    main .perrochico, main .perrogrande{
+        display: flex;
+    }
+
+    main .botonagenda{
+        grid-column: span 2;
+    }
+
+
+}
+
+
+
+
+/* estilos del main tienda */
+main .item-tienda{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 50%);
+    justify-content: center;
+    margin: 20px;
+    padding-bottom: 30px;
+}
+
+.item-tienda img{
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+}
+
+.item-tienda p{
+    font-size: 12px ;
+}
+
+.botonarnes, .botonrasqueta{
+    background-color: orange;
+    padding: 20px;
+    margin-top: 50px;
+    display: inline-block;
+
+}
+
+.botonarnes a, .botonrasqueta a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+
+/* estilos del main nosotras */
+
+section .contenedornosotras{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+    
+
+}
+
+.contenedornosotras img{
+    height: 600px;
+}
+
+.contenedornosotras p{
+    padding-top: 30px;
+}
+
+/* estilos del main tips */
+
+
+main .item-tip{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.item-tip img{
+    height: 300px ;
+    padding: 10px;
+    
+}
+
+.item-tip h3{
+    margin-top: 10px;
+    
+}
+
+.item-tip p{
+    font-size: 14px;
+    margin: 15px; 
+    
+}
+
+
+
+/* estilos del footer */
+footer{
+    background-color: orange;
+    color: aliceblue;
+    padding: 15px;
+    display: grid;
+    justify-content: center;
+}
+
+footer a img{ 
+    height: 25px;
+    width: 25px;
+    justify-content: center;
+    display: flex;
+}
+
+footer p{
+    font-size: 14px ;
+    font-family: "Poppins", sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    
+    
+
+}
+
+footer .menu-mapa{
+    padding: auto;
+    margin: auto;
+    text-align: right;
+}
